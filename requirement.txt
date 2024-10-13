@@ -1,0 +1,7 @@
+pyaudio
+numpy
+PyQt5
+pydub
+pandas
+openpyxl
+pyperclip
