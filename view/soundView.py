@@ -125,10 +125,9 @@ class SoundView(QWidget):
 
     def update_drawing(self):
         step = 600
-        if self.current_position < self.max_position:
+        while self.current_position < self.max_position:
             self.current_position += step
             self.update()
-            QTimer.singleShot(0, self.update_drawing)
 
     def set_playback_position(self, position):
         self.playback_position = position
